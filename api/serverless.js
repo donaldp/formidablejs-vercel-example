@@ -1,9 +1,5 @@
-const { Application } = require('server.app');
+const { Application } = require('./dist/server.app');
 
-
-/**
- * Serverless Application.
- */
 export default async (req, res) => {
 	const app = await Application
 
