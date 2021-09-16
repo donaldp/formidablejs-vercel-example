@@ -1,4 +1,4 @@
-const { Application } = require('server.app');
+const { Application } = require('../server.app');
 
 const server = async (req, res) => {
 	const app = await Application
