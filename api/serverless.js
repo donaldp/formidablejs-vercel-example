@@ -1,5 +1,9 @@
 const { Application } = require('server.app');
 
+
+/**
+ * Serverless Application.
+ */
 export default async (req, res) => {
 	const app = await Application
 
