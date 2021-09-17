@@ -1,6 +1,16 @@
 import { Route, helpers } from '@formidablejs/framework'
+import fs from 'fs'
+import path from 'path'
 
 Route.get('/', do(request) request.translate 'index.hello', 'Hello World').name('hello').middleware(['lang'])
+
+Route.get 'test', do
+	{
+		pwd: process.env.PWD,
+		cacheJson: fs.existsSync path.join('..', 'bootstrap', 'cache', 'config.json')
+		cache: fs.existsSync path.join('..', 'bootstrap', 'cache')
+		bootstrap: fs.existsSync path.join('..', 'bootstrap')
+	}
 
 Route.get '/name', do
 	helpers.config('app.name')

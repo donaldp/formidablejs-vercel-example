@@ -42,9 +42,6 @@ jobs:
           APP_DEBUG: ${{ secrets.APP_DEBUG }}
           APP_URL: ${{ secrets.APP_URL }}
 
-      - name: "Copy Cache"
-        run: cp -r bootstrap/cache dist/bootsrap/cache
-
       - name: "Deploy to Vercel"
         run: |
           prodRun=""
