@@ -21,10 +21,9 @@ jobs:
           node-version: '14'
           registry-url: https://registry.npmjs.org/
 
-			- name: Install Dependencies
-				run: npm install
-			- name: Build Application
-				run: npm run build
+			- name: Install
+				run: npm i
+
       - name: "Deploy to Vercel"
         run: |
           prodRun=""
