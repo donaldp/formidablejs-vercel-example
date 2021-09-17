@@ -42,6 +42,20 @@ To setup automatic deployments, you will need to go to your Github project setti
 
 `VERCEL_TOKEN` - to your Vercel token
 
+#### Formidable Environment Variables
+
+You will need to add the following environment variables to your Github project:
+
+`APP_NAME` - the name of your application, .e.g. `Formidable Example`.
+
+`APP_ENV` - the environment of your application, .e.g. `development`.
+
+`APP_KEY` - the key of your application, run `craftsman key` to generate one.
+
+`APP_DEBUG` - set to `true` to enable debug mode. Debug mode is disabled by default.
+
+`APP_URL` - the url of your application, .e.g. `https://formidablejs-vercel-example.vercel.app`. You can skip this if you don't know your application url.
+
 ### Deploying
 
 Assuming your default branch is `dev`, your application should now be deployed to Vercel.
