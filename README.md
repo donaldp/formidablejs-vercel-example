@@ -10,7 +10,7 @@ Deploy your own Formidable project with Vercel.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/donaldp/formidablejs-vercel-example)
 
-_Live Example: https://formidablejs-vercel-example.vercel.app/_
+_Live Example: https://formidablejs-vercel-example-donaldpakkies.vercel.app/_
 
 ### How I Created This Example
 
