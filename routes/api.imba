@@ -22,3 +22,6 @@ Route.get '/env', do
 
 Route.get '/url', do
 	helpers.config('app.url')
+
+Route.get '/all', do
+	process.env
