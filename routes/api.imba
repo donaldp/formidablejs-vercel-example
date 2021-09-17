@@ -7,9 +7,9 @@ Route.get('/', do(request) request.translate 'index.hello', 'Hello World').name(
 Route.get 'test', do
 	{
 		pwd: process.env.PWD,
-		cacheJson: fs.existsSync path.join('..', 'bootstrap', 'cache', 'config.json')
-		cache: fs.existsSync path.join('..', 'bootstrap', 'cache')
-		bootstrap: fs.existsSync path.join('..', 'bootstrap')
+		cacheJson: fs.existsSync path.join(process.env.PWD, 'bootstrap', 'cache', 'config.json')
+		cache: fs.existsSync path.join(process.env.PWD, 'bootstrap', 'cache')
+		bootstrap: fs.existsSync path.join(process.env.PWD, 'bootstrap')
 	}
 
 Route.get '/name', do
