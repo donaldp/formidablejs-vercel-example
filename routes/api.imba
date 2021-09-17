@@ -10,6 +10,7 @@ Route.get 'test', do
 		cacheJson: fs.existsSync path.join(process.env.PWD, 'bootstrap', 'cache', 'config.json')
 		cache: fs.existsSync path.join(process.env.PWD, 'bootstrap', 'cache')
 		bootstrap: fs.existsSync path.join(process.env.PWD, 'bootstrap')
+		dist: fs.readdirSync(path.join(process.env.PWD, 'dist'))
 		files: fs.readdirSync(process.env.PWD)
 	}
 
