@@ -1,86 +1,49 @@
-## About Formidable
-Formidable is a Imba Framework for Rapid API Development.
+# Formidable Example
 
-![Status](https://github.com/formidablejs/framework/actions/workflows/test.yml/badge.svg)
-![npm](https://img.shields.io/npm/v/@formidablejs/framework)
-![GitHub](https://img.shields.io/github/license/formidablejs/framework)
+This repo is a brief example of using an Formidablejs app that can be deployed with Vercel.
 
-## Installation
+## Deploy Your Own
 
-To get started, you need to install the Craftsman CLI. The Craftsman CLI will allow you to create new projects, and also provides a number of helpful commands that can assist you while building your application.
+Deploy your own Formidable project with Vercel.
 
-#### Your first Formidable Application (recommended)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/donaldp/formidablejs-vercel-example)
 
-When creating a new application, the Craftsman CLI will clone the formidablejs repository from Github and install all the dependencies for you:
+_Live Example: https://formidablejs-vercel-example.vercel.app/_
 
-```bash
-npm i -g @formidablejs/craftsman
-craftsman new project-name
+### How I Created This Example
+
+To get started with Formidable, you can use the [`craftsman new hello-world`](https://www.formidablejs.org/docs/) command to initialize the project:
+
+Install the `craftsman` cli globally with:
+
+```shell
+npm install -g @formidablejs/craftsman
 ```
 
-> Note: You only need to install the `@formidablejs/craftsman` package once.
+You can then create a new project with:
 
-Once done, you can run your application using the following command.
-
-```bash
-cd project-name
-npm start
+```shell
+$ craftsman new hello-world
 ```
 
-#### Alternative Installation (not recommended)
+### Vercel Configuration
 
-You may also create a new application using the following commands:
+Before you deploy your app, you'll need to know your project ID and org ID. You can get them from Vercel. You can find your project ID from your project settings, and your org ID from your [account settings](https://vercel.com/account). Alternatively, you can link your project to Vercel. This can be done by using`npx vercel link`. This will create a `.vercel` folder with the `project.json` file which contains the `projectId` and `orgId`.
 
-Clone the Formidablejs repository from Github:
+You will also need a token from Vercel. You can generate one from your Vercel account settings.
 
-```bash
-git clone https://github.com/formidablejs/formidablejs.git project-name
-```
+### Github Configuration
 
-`cd` and install the dependencies:
+To setup automatic deployments, you will need to go to your Github project settings, and add the folllowing secrets:
 
-```bash
-cd project-name
-npm i
-```
+`VERCEL_ORG_ID` - to your Vercel org ID
 
-Copy the `.env.example` file to `.env`:
+`VERCEL_PROJECT_ID` - to your Vercel project ID
 
-```bash
-cp .env.example .env
-```
+`VERCEL_TOKEN` - to your Vercel token
 
-Generate an application key:
+### Deploying
 
-```bash
-./node_modules/.bin/craftsman key
-```
+Assuming your default branch is `dev`, your application should now be deployed to Vercel.
 
-Publish `@formidablejs/framework` and `@formidablejs/mailer`:
-
-```bash
-./node_modules/.bin/craftsman install --package=@formidablejs/framework -v
-./node_modules/.bin/craftsman install --package=@formidablejs/mailer -v
-```
-
-Cache the config files:
-
-```bash
-./node_modules/.bin/craftsman cache
-```
-
-And finally, run your application:
-
-```bash
-npm start
-```
-
-For more information, please visit the [Formidable Documentation](https://formidablejs.org/docs/).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Formidable, please send an e-mail to Donald Pakkies via [donaldpakkies@gmail.com](mailto:donaldpakkies@gmail.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Formidable framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+You can change the branch name under the `.github/workflows/deploy.yml` file.
