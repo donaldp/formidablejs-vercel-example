@@ -65,3 +65,5 @@ You will need to add the following secrets to your Github project:
 Assuming your default branch is `dev`, your application should now be deployed to Vercel.
 
 You can change the branch name under the `.github/workflows/deploy.yml` file.
+
+> Use the preview url to access your application.
