@@ -1,6 +1,6 @@
 # Formidable Example
 
-This repo is a brief example of using an Formidablejs app that can be deployed with Vercel.
+This repo is a brief example of a Formidable app that can be deployed with Vercel.
 
 > Note: this is a hacky solution and should not be implemented for production apps.
 
