@@ -28,7 +28,7 @@ $ craftsman new hello-world
 
 ### Vercel Configuration
 
-Before you deploy your app, you'll need to know your project ID and org ID. You can get them from Vercel. You can find your project ID from your project settings, and your org ID from your [account settings](https://vercel.com/account). Alternatively, you can link your project to Vercel. This can be done by using`npx vercel link`. This will create a `.vercel` folder with the `project.json` file which contains the `projectId` and `orgId`.
+Before you deploy your app, you'll need to know your project ID and org ID. You can get them from Vercel. You can find your project ID from your project settings, and your org ID from your [account settings](https://vercel.com/account). Alternatively, you can link your project to Vercel. This can be done by using `npx vercel link`. This will create a `.vercel` folder with the `project.json` file which contains the `projectId` and `orgId`.
 
 You will also need a token from Vercel. You can generate one from your Vercel account settings.
 
