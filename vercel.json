@@ -1,8 +1,4 @@
 {
-	"github": {
-		"enabled": false,
-		"silent": true
-	},
     "rewrites": [
         {
             "source": "/(.*)",
