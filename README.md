@@ -44,7 +44,7 @@ To setup automatic deployments, you will need to go to your Github project setti
 
 #### Formidable Environment Variables
 
-You will need to add the following environment variables to your Github project:
+You will need to add the following secrets to your Github project:
 
 `APP_NAME` - the name of your application, .e.g. `Formidable Example`.
 
