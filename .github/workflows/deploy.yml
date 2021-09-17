@@ -33,6 +33,9 @@ jobs:
           APP_DEBUG: ${{ secrets.APP_DEBUG }}
           APP_URL: ${{ secrets.APP_URL }}
 
+      - name: Touch
+        run: touch config.json
+
       - name: "Deploy to Vercel"
         run: |
           prodRun=""
