@@ -33,8 +33,15 @@ jobs:
           APP_DEBUG: ${{ secrets.APP_DEBUG }}
           APP_URL: ${{ secrets.APP_URL }}
 
-      - name: Touch
-        run: touch config.json
+      - name: Cache
+        run: npm run cache
+         env:
+          APP_NAME: ${{ secrets.APP_NAME }}
+          APP_ENV: ${{ secrets.APP_ENV }}
+          APP_KEY: ${{ secrets.APP_KEY }}
+          APP_DEBUG: ${{ secrets.APP_DEBUG }}
+          APP_URL: ${{ secrets.APP_URL }}
+          PREFER_DISTRIBUTED_CACHE: true
 
       - name: "Deploy to Vercel"
         run: |

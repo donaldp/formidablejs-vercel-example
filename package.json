@@ -10,7 +10,7 @@
     "build:dev": "craftsman build --env development",
     "build:test": "craftsman build --env testing",
     "build:prod": "craftsman build --env production",
-	"cache": "craftsman cache",
+    "cache": "craftsman cache",
     "start": "craftsman serve",
     "start:dev": "craftsman serve --dev",
     "test": "jest --roots test",
