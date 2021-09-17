@@ -12,7 +12,7 @@ _Live Example: https://formidablejs-vercel-example.vercel.app/_
 
 ### How I Created This Example
 
-To get started with Formidable, you can use the [`craftsman new hello-world`](https://www.formidablejs.org/docs/) command to initialize the project:
+To get started with Formidable, you can use the [`craftsman new hello-world`](https://www.formidablejs.org/docs/) command to initialize a new project:
 
 Install the `craftsman` cli globally with:
 
