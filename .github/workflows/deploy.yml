@@ -25,7 +25,7 @@ jobs:
         run: npm install
 
       - name: Cache
-        run: craftsman cache
+        run: npm run cache
         env:
           APP_NAME: ${{ secrets.APP_NAME }}
           APP_ENV: ${{ secrets.APP_ENV }}
@@ -34,7 +34,7 @@ jobs:
           APP_URL: ${{ secrets.APP_URL }}
 
       - name: Build
-        run: craftsman build
+        run: npm run build
         env:
           APP_NAME: ${{ secrets.APP_NAME }}
           APP_ENV: ${{ secrets.APP_ENV }}
