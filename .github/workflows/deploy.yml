@@ -12,7 +12,7 @@ on:
 jobs:
   vercel:
     runs-on: ubuntu-latest
-    name: "Deploy front-end"
+    name: "Deploy api"
 
     steps:
       - uses: actions/checkout@v2
@@ -22,11 +22,9 @@ jobs:
           registry-url: https://registry.npmjs.org/
 
 			- name: Install Dependencies
-				run: npm run install
-
+				run: npm install
 			- name: Build Application
 				run: npm run build
-
       - name: "Deploy to Vercel"
         run: |
           prodRun=""
