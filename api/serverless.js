@@ -1,5 +1,4 @@
-const { Application } = require('/dist/server.app');
-// const config = require('../bootstrap/cache/config.json');
+const { Application } = require('../dist/server.app');
 
 export default async (req, res) => {
 	const app = await Application
