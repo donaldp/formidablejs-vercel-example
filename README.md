@@ -56,6 +56,8 @@ You will need to add the following secrets to your Github project:
 
 `APP_URL` - the url of your application, .e.g. `https://formidablejs-vercel-example.vercel.app`. You can skip this if you don't know your application url.
 
+> Don't forget to also add your `.env` variables to your Vercel project.
+
 ### Deploying
 
 Assuming your default branch is `dev`, your application should now be deployed to Vercel.
