@@ -35,7 +35,7 @@ jobs:
 
       - name: Cache
         run: npm run cache
-         env:
+        env:
           APP_NAME: ${{ secrets.APP_NAME }}
           APP_ENV: ${{ secrets.APP_ENV }}
           APP_KEY: ${{ secrets.APP_KEY }}
