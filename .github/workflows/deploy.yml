@@ -26,6 +26,12 @@ jobs:
 
       - name: "Build Formidable"
         run: npm run build
+        env:
+          APP_NAME: ${{ secrets.APP_NAME }}
+          APP_ENV: ${{ secrets.APP_ENV }}
+          APP_KEY: ${{ secrets.APP_KEY }}
+          APP_DEBUG: ${{ secrets.APP_DEBUG }}
+          APP_URL: ${{ secrets.APP_URL }}
 
       - name: "Deploy to Vercel"
         run: npx vercel --token ${VERCEL_TOKEN}
