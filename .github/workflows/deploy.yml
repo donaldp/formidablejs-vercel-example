@@ -21,15 +21,14 @@ jobs:
           node-version: '14'
           registry-url: https://registry.npmjs.org/
 
-			- name: Install
-				run: npm i
-
       - name: "Deploy to Vercel"
         run: |
           prodRun=""
           if [[ ${GITHUB_REF} == "refs/heads/main" ]]; then
             prodRun="--prod"
           fi
+
+					npm i
 
           npx vercel --token ${VERCEL_TOKEN}
         env:
