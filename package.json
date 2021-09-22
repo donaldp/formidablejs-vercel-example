@@ -1,33 +1,33 @@
 {
-  "name": "formidablejs-vercel-example",
-  "version": "0.0.1",
-  "description": "A formidablejs application deployed with Github Actions and Vercel",
-  "author": "Donald Pakkies <donaldpakkies@gmail.com>",
-  "private": true,
-  "license": "MIT",
-  "scripts": {
-    "build": "craftsman build",
-    "build:dev": "craftsman build --env development",
-    "build:test": "craftsman build --env testing",
-    "build:prod": "craftsman build --env production",
-    "cache": "craftsman cache",
-    "start": "craftsman serve",
-    "start:dev": "craftsman serve --dev",
-    "test": "jest --roots test",
-    "test:watch": "jest --roots test --watchAll"
-  },
-  "dependencies": {
-    "@formidablejs/craftsman": "^0.2.0-alpha.1",
-    "@formidablejs/framework": "^0.2.0-alpha.1",
-    "@formidablejs/mailer": "^0.1.0-alpha.1",
-    "@formidablejs/stubs": "^0.2.0-alpha.1",
-    "imba": "^2.0.0-alpha.170",
-    "mysql": "^2.18.1"
-  },
-  "devDependencies": {
-    "@types/jest": "^26.0.24",
-    "@types/node": "^15.12.2",
-    "jest": "^27.0.6",
-    "supertest": "^6.1.5"
-  }
+	"name": "formidablejs-vercel-example",
+	"version": "0.0.1",
+	"description": "A formidablejs application deployed with Github Actions and Vercel",
+	"author": "Donald Pakkies <donaldpakkies@gmail.com>",
+	"private": true,
+	"license": "MIT",
+	"scripts": {
+		"build": "craftsman build",
+		"build:dev": "craftsman build --env development",
+		"build:test": "craftsman build --env testing",
+		"build:prod": "craftsman build --env production",
+		"cache": "craftsman cache",
+		"start": "craftsman serve",
+		"start:dev": "craftsman serve --dev",
+		"test": "jest --roots test",
+		"test:watch": "jest --roots test --watchAll"
+	},
+	"dependencies": {
+		"@formidablejs/craftsman": "^0.2.0-alpha.5",
+		"@formidablejs/framework": "^0.2.0-alpha.6",
+		"@formidablejs/mailer": "^0.1.0-alpha.1",
+		"@formidablejs/stubs": "^0.2.0-alpha.3",
+		"imba": "^2.0.0-alpha.172",
+		"mysql": "^2.18.1"
+	},
+	"devDependencies": {
+		"@types/jest": "^26.0.24",
+		"@types/node": "^15.12.2",
+		"jest": "^27.0.6",
+		"supertest": "^6.1.5"
+	}
 }
